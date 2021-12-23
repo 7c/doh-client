@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-
+const package = require('./package.json')
 const chalk = require('chalk')
 const argv = require('minimist')(process.argv.slice(2))
 const doh = require('@sagi.io/dns-over-https')
@@ -69,6 +69,7 @@ function parseDOHServer(input) {
 async function start() {
     var query
     try {
+        if (argv.version) { console.log(package.version); process.exit(0) }
         let started = Date.now()
         doValidation()
         if (argv._.length!==1) showUsage()

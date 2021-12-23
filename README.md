@@ -15,6 +15,7 @@ doh <hostname> [...parameters...]
         --method <method>       request method,default 'POST'
         --server <url>          doh server,default 'https://ns3.com'
         --format <fmt>  output format, default 'json', available:'string'
+        --version     outputs the version of doh-client version
 ```
 
 ## Output
