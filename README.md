@@ -21,7 +21,25 @@ doh <hostname> [...parameters...]
         --version               outputs the version of doh-client version
 ```
 
-## Output
+## BASIC Output
+```
+$ doh ns3.com --format basic
+ns3.com IN A 142.93.50.149
+ns3.com IN A 144.202.68.103
+ns3.com IN A 66.42.82.132
+ns3.com IN A 3.136.108.55
+ns3.com IN A 104.238.182.24
+ns3.com IN A 140.82.29.140
+ns3.com IN A 104.207.138.237
+ns3.com IN A 137.184.82.165
+ns3.com IN A 45.77.163.166
+$ doh ns3.com --format basic --rtype mx
+ns3.com IN MX 50 mx3.zoho.com
+ns3.com IN MX 20 mx2.zoho.com
+ns3.com IN MX 10 mx.zoho.com
+```
+
+## JSON Output
 output format can be changed with --format option
 
 ```

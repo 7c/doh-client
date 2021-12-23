@@ -46,7 +46,7 @@ function parseDOHServer(input) {
 }
 
 function basicOutput(output) {
-    console.log(output)
+    // console.log(output)
     exitcode=0
     if (output.hasOwnProperty('err')) {
         if (typeof output.err === 'string')
