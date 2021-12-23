@@ -14,8 +14,11 @@ doh <hostname> [...parameters...]
         --type <rtype>          resource type to query, default 'A'
         --method <method>       request method,default 'POST'
         --server <url>          doh server,default 'https://ns3.com'
-        --format <fmt>  output format, default 'json', available:'string'
-        --version     outputs the version of doh-client version
+        --format <fmt>          output format, default 'json', available:'string','basic'
+        
+        --timeout <seconds>     query timeout, default: 5
+        --useragent <ua>        sets user-agent for requests, default:'ns3-doh-client'
+        --version               outputs the version of doh-client version
 ```
 
 ## Output
