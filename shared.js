@@ -27,7 +27,7 @@ function validRType(rtype) {
 function showUsage() {
     console.log(chalk.yellow.inverse('Usage:'))
     console.log(chalk.bold(`doh <hostname> [...parameters...]`))
-    console.log(chalk.gray(`\t--type <rtype>\t\tresource type to query, default 'A'`))
+    console.log(chalk.gray(`\t--rtype <rtype>\t\tresource type to query, default 'A'`))
     console.log(chalk.gray(`\t--method <method>\trequest method,default 'POST'`))
     console.log(chalk.gray(`\t--server <url>\t\tdoh server,default 'https://ns3.com'`))
     console.log(chalk.gray(`\t--format <fmt>\toutput format, default 'json', available:'string','basic'`))
